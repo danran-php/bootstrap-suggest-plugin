@@ -134,8 +134,9 @@
                 //是否显示 button 按钮
                 if (! options.showBtn) {
                     $input.css('border-radius', '4px')
-                        .parents(".input-group:eq(0)").css('width', '100%')
-                        .find('.input-group-btn>.btn').hide();
+                        .parents(".input-group:eq(0)")
+                        .find('.input-group-btn').width('0px')
+                        .find('.btn').hide();
                 }
 
                 //移除 disabled 类，并禁用自动完成
